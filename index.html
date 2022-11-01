@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="corpo">
+    <div class="formulario">
+        <h1>Conversor de Temperaturas</h1>
+            <div id="temp">
+                 <label>Insira uma temperatura:</label>
+                 <input id="temperatura" type="text">
+            </div>
+      <div id="temps">
+        <label>Escolha uma opção:</label>
+        <select name="temperaturas" id="temperaturas">
+            <option value="0" selected disabled>Escolha uma opcao</option>  
+            <option value="Fahrenheit" id="fahrenheit">Fahrenheit</option>
+            <option value="Celsius" id="celsius">Celsius</option>
+            <option value="Kelvin" id="kelvin">Kelvin</option>
+            <option value="Rankine" id="rankine">Rankine</option>
+        </select>
+     </div>
+    <div id="botao">
+        <button onclick="conversorTemperatura()">Converter</button>
+    </div>
+    <div id="table">
+        <table id="tabela">
+        <thead>
+            <tr>
+            <th>Fahrenheit</th>
+            <th>Celsius</th>
+            <th>Kelvin</th>
+            <th>Rankine</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+    </div>
+    
+</div>
+</body>
+<script src="script.js"></script>
+</html>
